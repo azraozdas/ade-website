@@ -1,0 +1,18 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Shell scripts should always use LF
+*.sh text eol=lf
+docker-entrypoint.sh text eol=lf
+
+# Source code files
+*.ts text eol=lf
+*.js text eol=lf
+*.vue text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+# Ensure these files use LF line endings
+package.json text eol=lf
+package-lock.json text eol=lf
+tsconfig.json text eol=lf
